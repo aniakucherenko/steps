@@ -47,3 +47,13 @@ function update() {
     next.disabled = false
   }
 }
+
+const search = document.querySelector('.search')
+const btnSearch = document.querySelector('.btn_search')
+const input = document.querySelector('.input')
+
+btnSearch.addEventListener('click', () => {
+  search.classList.toggle('active')
+  input.focus()
+  input.style.opacity = 1
+})
